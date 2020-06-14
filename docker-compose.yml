@@ -8,8 +8,8 @@ services:
     networks:
       - botnet
     ports:
-#      - "80:80"
-#      - "443:443"
+      # - "80:80"
+      # - "443:443"
       - "8000:8000"
     volumes:
       - ./app:/src
@@ -73,7 +73,7 @@ services:
       context: compose/postgres/
       dockerfile: Dockerfile
       args:
-	    psql_pass: ${DB_PASSWORD}
+        psql_pass: ${DB_PASSWORD}
         psql_db: ${DB_NAME}
         psql_user: ${DB_USER}
     image: postgres
