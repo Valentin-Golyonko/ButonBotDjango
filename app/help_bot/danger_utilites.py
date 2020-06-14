@@ -7,10 +7,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 path = os.path.expanduser(BASE_DIR)
 if path not in sys.path:
     sys.path.insert(0, path)
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "HelpBot.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
 django.setup()
 
-from help_bot.models import (NeedHelp, StatisticWeb, StatisticTelegram, StatisticAttendance, ChatPositionWeb, ChatPositionTelegram)
+from app.help_bot.models import (NeedHelp, StatisticWeb, StatisticTelegram, StatisticAttendance, ChatPositionWeb,
+                                 ChatPositionTelegram)
 
 
 def recreate_need_help_statistic_fk():
