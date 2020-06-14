@@ -12,7 +12,7 @@ services:
       # - "443:443"
       - "8000:8000"
     volumes:
-      - ./app:/src
+      - ./ButonBotDjango:/src
       - ./config/nginx:/etc/nginx/conf.d
       - ./logs:/logs
       - /var/www/httpd-cert/www-root:/etc/ssl
@@ -31,11 +31,11 @@ services:
       - db
       - web
     volumes:
-      - ./app:/src
+      - ./ButonBotDjango:/src
     expose:
       - "8000"
     command: sh -c
-      "echo hello world && python3 help_bot/telega.py"
+      "echo hello world && python3 app/help_bot/telega.py"
     environment:
       DEBUG: ${DEBUG}
       POSTGRES_DATABASE: ${DB_NAME}
@@ -55,7 +55,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./app:/src
+      - ./ButonBotDjango:/src
     expose:
       - "8000"
     command: sh -c

@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 path = os.path.expanduser(BASE_DIR)
 if path not in sys.path:
     sys.path.insert(0, path)
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "../config.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
 django.setup()
 
 from app.help_bot.models import TelegramBot
