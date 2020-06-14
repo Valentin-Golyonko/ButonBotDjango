@@ -12,7 +12,7 @@ Web site - <a href="https://www.genderperspectives.by/" target="_blank">МОО �
 - <code>docker-compose build</code>
 - <code>docker-compose up -d</code>
 - <code>docker-compose run web python3 manage.py collectstatic</code>
-- <code>docker-compose run web python3 manage.py loaddata initial_data_09042020.json</code>
+- <code>docker-compose run web python3 manage.py loaddata initial_data.json</code>
 
 # Test Telegram ping
 - see 'new 1.txt'

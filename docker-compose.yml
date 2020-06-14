@@ -59,7 +59,7 @@ services:
     expose:
       - "8000"
     command: sh -c
-      "python3 manage.py makemigrations && python3 manage.py migrate && gunicorn HelpBot.wsgi -b 0.0.0.0:8000"
+      "python3 manage.py makemigrations && python3 manage.py migrate && gunicorn config.wsgi -b 0.0.0.0:8000"
     environment:
       DEBUG: ${DEBUG}
       POSTGRES_DATABASE: ${DB_NAME}
