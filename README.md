@@ -20,3 +20,8 @@ Web site - <a href="https://www.genderperspectives.by/" target="_blank">МОО �
 - change chat id (@userinfobot)
 - enter command to console
 - see result (form in the 'curl-format.txt')
+
+
+/admin
+name: superadmin
+pass: TDjymYHSJkpzp4p

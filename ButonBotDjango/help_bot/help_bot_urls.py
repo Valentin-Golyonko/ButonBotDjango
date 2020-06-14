@@ -1,6 +1,6 @@
 from django.urls import path
 
-from app.help_bot.views import (MainPage, WebChatBot, web_chat)
+from help_bot.views import (MainPage, WebChatBot, web_chat)
 
 urlpatterns = [
     path('', MainPage.as_view(), name='main_page'),

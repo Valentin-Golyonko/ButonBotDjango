@@ -3,8 +3,8 @@ from django.shortcuts import render
 from django.views.decorators.clickjacking import xframe_options_exempt
 from django.views.generic import TemplateView
 
-from app.help_bot.statistic import save_site_statistic
-from app.help_bot.web_chat_logic import chat_req_get
+from help_bot.statistic import save_site_statistic
+from help_bot.web_chat_logic import chat_req_get
 
 
 class MainPage(TemplateView):

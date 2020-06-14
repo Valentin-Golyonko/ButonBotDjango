@@ -3,9 +3,9 @@ from django.template.response import TemplateResponse
 from django.urls import path
 from mptt.admin import MPTTModelAdmin
 
-from app.help_bot.models import (NeedHelp, TelegramBot, HelpText, StartMessage, StatisticTelegram,
-                                 StatisticAttendance, ChatBotIframe, EditionButtons)
-from app.help_bot.statistic import get_chat_statistic
+from help_bot.models import (NeedHelp, TelegramBot, HelpText, StartMessage, StatisticTelegram,
+                             StatisticAttendance, ChatBotIframe, EditionButtons)
+from help_bot.statistic import get_chat_statistic
 
 
 class InlineHelpText(admin.StackedInline):

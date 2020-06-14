@@ -1,6 +1,6 @@
 from time import perf_counter
 
-from app.help_bot.loger_set_up import logger_utility
+from help_bot.loger_set_up import logger_utility
 
 
 def check_input(string: str) -> bool:

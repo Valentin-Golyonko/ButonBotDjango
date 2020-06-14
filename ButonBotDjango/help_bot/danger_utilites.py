@@ -10,8 +10,8 @@ if path not in sys.path:
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
 django.setup()
 
-from app.help_bot.models import (NeedHelp, StatisticWeb, StatisticTelegram, StatisticAttendance, ChatPositionWeb,
-                                 ChatPositionTelegram)
+from help_bot.models import (NeedHelp, StatisticWeb, StatisticTelegram, StatisticAttendance, ChatPositionWeb,
+                             ChatPositionTelegram)
 
 
 def recreate_need_help_statistic_fk():

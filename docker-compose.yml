@@ -35,7 +35,7 @@ services:
     expose:
       - "8000"
     command: sh -c
-      "echo hello world && python3 app/help_bot/telega.py"
+      "echo hello world && python3 help_bot/telega.py"
     environment:
       DEBUG: ${DEBUG}
       POSTGRES_DATABASE: ${DB_NAME}

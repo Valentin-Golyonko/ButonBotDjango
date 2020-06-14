@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app.help_bot',
+    'help_bot',
     'mptt',
 ]
 
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, '../app/help_bot/templates/'),
+        'DIRS': [os.path.join(BASE_DIR, '../help_bot/templates/'),
                  os.path.join(BASE_DIR, '../templates')]
         ,
         'APP_DIRS': True,
@@ -127,7 +127,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, '../static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, '../app/help_bot/static/help_bot/'),
+    os.path.join(BASE_DIR, '../help_bot/static/help_bot/'),
 ]
 
 # default is 10 pixels

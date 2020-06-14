@@ -12,9 +12,9 @@ if path not in sys.path:
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
 django.setup()
 
-from app.help_bot.models import (NeedHelp, StartMessage, HelpText, EditionButtons)
-from app.help_bot.telega_logic import keyboard_button
-from app.help_bot.utility import time_it
+from help_bot.models import (NeedHelp, StartMessage, HelpText, EditionButtons)
+from help_bot.telega_logic import keyboard_button
+from help_bot.utility import time_it
 
 
 def start_msg() -> (list, str):

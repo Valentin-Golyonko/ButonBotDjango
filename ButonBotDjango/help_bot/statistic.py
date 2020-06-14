@@ -2,8 +2,8 @@ from datetime import date
 
 from django.db import models
 
-from app.help_bot.models import (NeedHelp, StatisticWeb, StatisticTelegram, StatisticAttendance)
-from app.help_bot.utility import try_except
+from help_bot.models import (NeedHelp, StatisticWeb, StatisticTelegram, StatisticAttendance)
+from help_bot.utility import try_except
 
 
 @try_except

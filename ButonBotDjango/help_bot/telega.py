@@ -13,9 +13,9 @@ if path not in sys.path:
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
 django.setup()
 
-from app.help_bot.models import TelegramBot
-from app.help_bot.telega_logic import keyboard_button
-from app.help_bot.loger_set_up import logger_telegram
+from help_bot.models import TelegramBot
+from help_bot.telega_logic import keyboard_button
+from help_bot.loger_set_up import logger_telegram
 from functools import wraps
 
 

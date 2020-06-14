@@ -1,9 +1,9 @@
 from telegram import KeyboardButton
 
-from app.help_bot.loger_set_up import logger_telegram
-from app.help_bot.models import (NeedHelp, HelpText, StartMessage, ChatPositionTelegram, EditionButtons)
-from app.help_bot.statistic import (save_telegram_chat_statistic)
-from app.help_bot.utility import try_except
+from help_bot.loger_set_up import logger_telegram
+from help_bot.models import (NeedHelp, HelpText, StartMessage, ChatPositionTelegram, EditionButtons)
+from help_bot.statistic import (save_telegram_chat_statistic)
+from help_bot.utility import try_except
 
 
 def keyboard_button(_massage: str, _chat_id: int) -> (list, str):

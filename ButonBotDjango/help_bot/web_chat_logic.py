@@ -1,9 +1,9 @@
 import json
 
-from app.help_bot.loger_set_up import logger_web_chat
-from app.help_bot.models import (NeedHelp, StartMessage, ChatPositionWeb, HelpText, EditionButtons)
-from app.help_bot.statistic import (save_web_chat_statistic)
-from app.help_bot.utility import (check_input, try_except)
+from help_bot.loger_set_up import logger_web_chat
+from help_bot.models import (NeedHelp, StartMessage, ChatPositionWeb, HelpText, EditionButtons)
+from help_bot.statistic import (save_web_chat_statistic)
+from help_bot.utility import (check_input, try_except)
 
 
 def chat_req_get(request) -> str:
