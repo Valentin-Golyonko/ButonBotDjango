@@ -19,3 +19,7 @@
 /admin
 name: superadmin
 pass: TDjymYHSJkpzp4p
+
+# pythonanywhere Tasks
+### Scheduled tasks: 
+/home/YOURNAME/.virtualenvs/bot_venv/bin/python /home/YOURNAME/ButonBotDjango/ButonBotDjango/help_bot/telega.py
