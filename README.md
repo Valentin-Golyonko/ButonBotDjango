@@ -5,8 +5,9 @@
 # Deploy:
 - <code>docker-compose build</code>
 - <code>docker-compose up -d</code>
-- <code>docker-compose run web python3 manage.py collectstatic</code>
-- <code>docker-compose run web python3 manage.py loaddata initial_data.json</code>
+- <code>docker exec -it django_web bash</code>
+- root@...:/src#<code>python3 manage.py collectstatic</code>
+- root@...:/src#<code>python3 manage.py loaddata initial_data.json</code>
 
 # Test Telegram ping
 - see 'new 1.txt'

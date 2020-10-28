@@ -81,7 +81,7 @@ DATABASES = {
         # 'TEST': {
         #     'NAME': os.path.join(BASE_DIR, 'test_db.sqlite3'),
         # },
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': os.environ.get('POSTGRES_DATABASE'),
         'USER': os.environ.get('POSTGRES_USER'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
@@ -140,7 +140,7 @@ LOGGING = {
         'file_error': {
             'level': 'WARNING',
             'class': 'logging.FileHandler',
-            'filename': os.path.join(BASE_DIR, 'error.log'),
+            'filename': os.path.join(BASE_DIR, '../error.log'),
         },
     },
     'loggers': {
