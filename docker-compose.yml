@@ -60,8 +60,10 @@ services:
     #      - "8000"
     #      command: sh -c
     #        "python3 manage.py makemigrations && python3 manage.py migrate && gunicorn config.wsgi -b 0.0.0.0:8000"
+    # new
     ports:
       - "8000:8000"
+    # new
     command: bash -c
       "python3 manage.py migrate
       && python3 manage.py runserver 0.0.0.0:8000"
@@ -84,6 +86,7 @@ services:
     image: postgres
     #    networks:
     #      - botnet
+    # new
     ports:
       - '5432:5432'
     restart: always
